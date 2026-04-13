@@ -1,0 +1,21 @@
+    <h2>Todo List</h2>
+
+    <input #todoInput placeholder="New task" />
+    <button (click)="add(todoInput.value); todoInput.value = ''">
+      Add
+    </button>
+
+    <p>Total: {{ todos().length }}</p>
+    <p>Completed: {{ completedCount() }}</p>
+
+    <ul>
+      <li *ngFor="let t of todos(); let i = index">
+        <input
+          type="checkbox"
+          [checked]="t.done"
+          (change)="toggle(i)"
+        />
+        {{ t.text }}
+        <button (click)="remove(i)">❌</button>
+      </li>
+    </ul>

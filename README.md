@@ -1,3 +1,9 @@
+## This is demo of signal in Angular 21, app "Todo List"
+
+![app in the browser](./browser-screen.JPG)
+
+
+
 # SignalTodoAngular21
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.3.
